@@ -4,30 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
     <title>HiveRift Software: Business Consulting Website Framework</title>
 
-   
     <meta
       name="description"
       content="HiveRift Software offers a powerful website framework designed for business consulting. Build scalable, professional, and user-friendly digital solutions."
     />
-    <meta
-      name="keywords"
-      content="website framework"
-    />
+    <meta name="keywords" content="website framework" />
     <meta name="author" content="HiveRift Technologies" />
     <meta name="robots" content="index, follow" />
 
-    
     <link rel="canonical" href="https://hiverift.com/" />
 
+    <link
+      rel="icon"
+      href="/src/assets/logo.svg"
+      type="image/svg+xml"
+      sizes="128x128"
+    />
 
-    <link rel="icon" href="/src/assets/logo.svg" type="image/svg+xml" sizes="128x128" />
-
-   
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="HiveRift | Web & App Development, AI Solutions" />
+    <meta
+      property="og:title"
+      content="HiveRift | Web & App Development, AI Solutions"
+    />
     <meta
       property="og:description"
       content="Custom web development, mobile apps, and AI-powered digital solutions from HiveRift."
@@ -35,16 +35,18 @@
     <meta property="og:url" content="https://hiverift.com/" />
     <meta property="og:image" content="https://hiverift.com/logo.svg" />
 
-
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="HiveRift | Web & App Development, AI Solutions" />
+    <meta
+      name="twitter:title"
+      content="HiveRift | Web & App Development, AI Solutions"
+    />
     <meta
       name="twitter:description"
       content="HiveRift builds custom websites, mobile apps, and AI-powered solutions."
     />
     <meta name="twitter:image" content="https://hiverift.com/logo.svg" />
 
-   <script type="application/ld+json">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
@@ -57,9 +59,48 @@
         ]
       }
     </script>
+
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "688101764328233");
+      fbq("track", "PageView");
+    </script>
+
+
+
   </head>
 
   <body>
+
+      <noscript
+        ><img
+          height="1"
+          width="1"
+          style="display:none"
+          src="https://www.facebook.com/tr?id=688101764328233&ev=PageView&noscript=1" /></noscript
+      >
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
